@@ -1,0 +1,717 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5EE947652267A4DB00FF8BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947642267A4DB00FF8BA5 /* AppDelegate.swift */; };
+		5EE947672267A4DB00FF8BA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947662267A4DB00FF8BA5 /* ViewController.swift */; };
+		5EE9476A2267A4DB00FF8BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE947682267A4DB00FF8BA5 /* Main.storyboard */; };
+		5EE9476C2267A4DD00FF8BA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5EE9476B2267A4DD00FF8BA5 /* Assets.xcassets */; };
+		5EE9476F2267A4DD00FF8BA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE9476D2267A4DD00FF8BA5 /* LaunchScreen.storyboard */; };
+		5EE9477A2267A4DD00FF8BA5 /* Fly365_MSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947792267A4DD00FF8BA5 /* Fly365_MSTests.swift */; };
+		5EE947852267A4DD00FF8BA5 /* Fly365_MSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947842267A4DD00FF8BA5 /* Fly365_MSUITests.swift */; };
+		5EE947962267D73400FF8BA5 /* Home.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE947952267D73400FF8BA5 /* Home.storyboard */; };
+		5EE947982267D8DA00FF8BA5 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947972267D8DA00FF8BA5 /* HomeViewController.swift */; };
+		5EE9479F2267E85D00FF8BA5 /* AMTabButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9479C2267E85D00FF8BA5 /* AMTabButton.swift */; };
+		5EE947A02267E85D00FF8BA5 /* AMPagerTabsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9479D2267E85D00FF8BA5 /* AMPagerTabsViewController.swift */; };
+		5EE947A12267E85D00FF8BA5 /* AMLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE9479E2267E85D00FF8BA5 /* AMLineView.swift */; };
+		5EE947A32267F4E000FF8BA5 /* TripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947A22267F4E000FF8BA5 /* TripViewController.swift */; };
+		5EE947A52267F4EA00FF8BA5 /* OneWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947A42267F4EA00FF8BA5 /* OneWayViewController.swift */; };
+		5EE947A92267FB9200FF8BA5 /* RoundedCornersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947A82267FB9100FF8BA5 /* RoundedCornersButton.swift */; };
+		5EE947AB2267FF9700FF8BA5 /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947AA2267FF9700FF8BA5 /* RoundedCornersView.swift */; };
+		5EE947AD2268015900FF8BA5 /* TripInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947AC2268015900FF8BA5 /* TripInfoViewController.swift */; };
+		5EE947B02268182A00FF8BA5 /* StoryboardsSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947AF2268182A00FF8BA5 /* StoryboardsSegues.swift */; };
+		5EE947B22268197100FF8BA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947B12268197100FF8BA5 /* Constants.swift */; };
+		5EE947B422681AA200FF8BA5 /* RoundTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947B322681AA200FF8BA5 /* RoundTripViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5EE947762267A4DD00FF8BA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EE947592267A4DB00FF8BA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EE947602267A4DB00FF8BA5;
+			remoteInfo = "Fly365-MS";
+		};
+		5EE947812267A4DD00FF8BA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5EE947592267A4DB00FF8BA5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5EE947602267A4DB00FF8BA5;
+			remoteInfo = "Fly365-MS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		5EE947612267A4DB00FF8BA5 /* Fly365-MS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fly365-MS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE947642267A4DB00FF8BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		5EE947662267A4DB00FF8BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		5EE947692267A4DB00FF8BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5EE9476B2267A4DD00FF8BA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5EE9476E2267A4DD00FF8BA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5EE947702267A4DD00FF8BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE947752267A4DD00FF8BA5 /* Fly365-MSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fly365-MSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE947792267A4DD00FF8BA5 /* Fly365_MSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fly365_MSTests.swift; sourceTree = "<group>"; };
+		5EE9477B2267A4DD00FF8BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE947802267A4DD00FF8BA5 /* Fly365-MSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Fly365-MSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5EE947842267A4DD00FF8BA5 /* Fly365_MSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fly365_MSUITests.swift; sourceTree = "<group>"; };
+		5EE947862267A4DD00FF8BA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5EE947952267D73400FF8BA5 /* Home.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Home.storyboard; sourceTree = "<group>"; };
+		5EE947972267D8DA00FF8BA5 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5EE9479C2267E85D00FF8BA5 /* AMTabButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMTabButton.swift; sourceTree = "<group>"; };
+		5EE9479D2267E85D00FF8BA5 /* AMPagerTabsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMPagerTabsViewController.swift; sourceTree = "<group>"; };
+		5EE9479E2267E85D00FF8BA5 /* AMLineView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AMLineView.swift; sourceTree = "<group>"; };
+		5EE947A22267F4E000FF8BA5 /* TripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewController.swift; sourceTree = "<group>"; };
+		5EE947A42267F4EA00FF8BA5 /* OneWayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneWayViewController.swift; sourceTree = "<group>"; };
+		5EE947A82267FB9100FF8BA5 /* RoundedCornersButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersButton.swift; sourceTree = "<group>"; };
+		5EE947AA2267FF9700FF8BA5 /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
+		5EE947AC2268015900FF8BA5 /* TripInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoViewController.swift; sourceTree = "<group>"; };
+		5EE947AF2268182A00FF8BA5 /* StoryboardsSegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardsSegues.swift; sourceTree = "<group>"; };
+		5EE947B12268197100FF8BA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		5EE947B322681AA200FF8BA5 /* RoundTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTripViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5EE9475E2267A4DB00FF8BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE947722267A4DD00FF8BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE9477D2267A4DD00FF8BA5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5EE947582267A4DB00FF8BA5 = {
+			isa = PBXGroup;
+			children = (
+				5EE947632267A4DB00FF8BA5 /* Fly365-MS */,
+				5EE947782267A4DD00FF8BA5 /* Fly365-MSTests */,
+				5EE947832267A4DD00FF8BA5 /* Fly365-MSUITests */,
+				5EE947622267A4DB00FF8BA5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		5EE947622267A4DB00FF8BA5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947612267A4DB00FF8BA5 /* Fly365-MS.app */,
+				5EE947752267A4DD00FF8BA5 /* Fly365-MSTests.xctest */,
+				5EE947802267A4DD00FF8BA5 /* Fly365-MSUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5EE947632267A4DB00FF8BA5 /* Fly365-MS */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947992267E82E00FF8BA5 /* Resources */,
+				5EE947922267D6F100FF8BA5 /* Home */,
+				5EE947642267A4DB00FF8BA5 /* AppDelegate.swift */,
+				5EE947662267A4DB00FF8BA5 /* ViewController.swift */,
+				5EE947682267A4DB00FF8BA5 /* Main.storyboard */,
+				5EE9476B2267A4DD00FF8BA5 /* Assets.xcassets */,
+				5EE9476D2267A4DD00FF8BA5 /* LaunchScreen.storyboard */,
+				5EE947702267A4DD00FF8BA5 /* Info.plist */,
+			);
+			path = "Fly365-MS";
+			sourceTree = "<group>";
+		};
+		5EE947782267A4DD00FF8BA5 /* Fly365-MSTests */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947792267A4DD00FF8BA5 /* Fly365_MSTests.swift */,
+				5EE9477B2267A4DD00FF8BA5 /* Info.plist */,
+			);
+			path = "Fly365-MSTests";
+			sourceTree = "<group>";
+		};
+		5EE947832267A4DD00FF8BA5 /* Fly365-MSUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947842267A4DD00FF8BA5 /* Fly365_MSUITests.swift */,
+				5EE947862267A4DD00FF8BA5 /* Info.plist */,
+			);
+			path = "Fly365-MSUITests";
+			sourceTree = "<group>";
+		};
+		5EE947922267D6F100FF8BA5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947942267D70800FF8BA5 /* ViewControllers */,
+				5EE947932267D6FC00FF8BA5 /* Storyboard */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5EE947932267D6FC00FF8BA5 /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947952267D73400FF8BA5 /* Home.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5EE947942267D70800FF8BA5 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947972267D8DA00FF8BA5 /* HomeViewController.swift */,
+				5EE947A22267F4E000FF8BA5 /* TripViewController.swift */,
+				5EE947A42267F4EA00FF8BA5 /* OneWayViewController.swift */,
+				5EE947AC2268015900FF8BA5 /* TripInfoViewController.swift */,
+				5EE947B322681AA200FF8BA5 /* RoundTripViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5EE947992267E82E00FF8BA5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947AE2268180300FF8BA5 /* Utils */,
+				5EE947A62267FB6C00FF8BA5 /* CustomViews */,
+				5EE9479A2267E83A00FF8BA5 /* Libs */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		5EE9479A2267E83A00FF8BA5 /* Libs */ = {
+			isa = PBXGroup;
+			children = (
+				5EE9479B2267E85D00FF8BA5 /* AMPagerTabs */,
+			);
+			path = Libs;
+			sourceTree = "<group>";
+		};
+		5EE9479B2267E85D00FF8BA5 /* AMPagerTabs */ = {
+			isa = PBXGroup;
+			children = (
+				5EE9479C2267E85D00FF8BA5 /* AMTabButton.swift */,
+				5EE9479D2267E85D00FF8BA5 /* AMPagerTabsViewController.swift */,
+				5EE9479E2267E85D00FF8BA5 /* AMLineView.swift */,
+			);
+			path = AMPagerTabs;
+			sourceTree = "<group>";
+		};
+		5EE947A62267FB6C00FF8BA5 /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947A72267FB7A00FF8BA5 /* RoundedCornersView */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		5EE947A72267FB7A00FF8BA5 /* RoundedCornersView */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947AA2267FF9700FF8BA5 /* RoundedCornersView.swift */,
+				5EE947A82267FB9100FF8BA5 /* RoundedCornersButton.swift */,
+			);
+			path = RoundedCornersView;
+			sourceTree = "<group>";
+		};
+		5EE947AE2268180300FF8BA5 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947AF2268182A00FF8BA5 /* StoryboardsSegues.swift */,
+				5EE947B12268197100FF8BA5 /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5EE947602267A4DB00FF8BA5 /* Fly365-MS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EE947892267A4DD00FF8BA5 /* Build configuration list for PBXNativeTarget "Fly365-MS" */;
+			buildPhases = (
+				5EE9475D2267A4DB00FF8BA5 /* Sources */,
+				5EE9475E2267A4DB00FF8BA5 /* Frameworks */,
+				5EE9475F2267A4DB00FF8BA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Fly365-MS";
+			productName = "Fly365-MS";
+			productReference = 5EE947612267A4DB00FF8BA5 /* Fly365-MS.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5EE947742267A4DD00FF8BA5 /* Fly365-MSTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EE9478C2267A4DD00FF8BA5 /* Build configuration list for PBXNativeTarget "Fly365-MSTests" */;
+			buildPhases = (
+				5EE947712267A4DD00FF8BA5 /* Sources */,
+				5EE947722267A4DD00FF8BA5 /* Frameworks */,
+				5EE947732267A4DD00FF8BA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EE947772267A4DD00FF8BA5 /* PBXTargetDependency */,
+			);
+			name = "Fly365-MSTests";
+			productName = "Fly365-MSTests";
+			productReference = 5EE947752267A4DD00FF8BA5 /* Fly365-MSTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5EE9477F2267A4DD00FF8BA5 /* Fly365-MSUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5EE9478F2267A4DD00FF8BA5 /* Build configuration list for PBXNativeTarget "Fly365-MSUITests" */;
+			buildPhases = (
+				5EE9477C2267A4DD00FF8BA5 /* Sources */,
+				5EE9477D2267A4DD00FF8BA5 /* Frameworks */,
+				5EE9477E2267A4DD00FF8BA5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5EE947822267A4DD00FF8BA5 /* PBXTargetDependency */,
+			);
+			name = "Fly365-MSUITests";
+			productName = "Fly365-MSUITests";
+			productReference = 5EE947802267A4DD00FF8BA5 /* Fly365-MSUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5EE947592267A4DB00FF8BA5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Mohammed Salah";
+				TargetAttributes = {
+					5EE947602267A4DB00FF8BA5 = {
+						CreatedOnToolsVersion = 10.1;
+					};
+					5EE947742267A4DD00FF8BA5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5EE947602267A4DB00FF8BA5;
+					};
+					5EE9477F2267A4DD00FF8BA5 = {
+						CreatedOnToolsVersion = 10.1;
+						TestTargetID = 5EE947602267A4DB00FF8BA5;
+					};
+				};
+			};
+			buildConfigurationList = 5EE9475C2267A4DB00FF8BA5 /* Build configuration list for PBXProject "Fly365-MS" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5EE947582267A4DB00FF8BA5;
+			productRefGroup = 5EE947622267A4DB00FF8BA5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5EE947602267A4DB00FF8BA5 /* Fly365-MS */,
+				5EE947742267A4DD00FF8BA5 /* Fly365-MSTests */,
+				5EE9477F2267A4DD00FF8BA5 /* Fly365-MSUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5EE9475F2267A4DB00FF8BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE9476F2267A4DD00FF8BA5 /* LaunchScreen.storyboard in Resources */,
+				5EE9476C2267A4DD00FF8BA5 /* Assets.xcassets in Resources */,
+				5EE9476A2267A4DB00FF8BA5 /* Main.storyboard in Resources */,
+				5EE947962267D73400FF8BA5 /* Home.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE947732267A4DD00FF8BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE9477E2267A4DD00FF8BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5EE9475D2267A4DB00FF8BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE947A02267E85D00FF8BA5 /* AMPagerTabsViewController.swift in Sources */,
+				5EE947672267A4DB00FF8BA5 /* ViewController.swift in Sources */,
+				5EE947AD2268015900FF8BA5 /* TripInfoViewController.swift in Sources */,
+				5EE947A32267F4E000FF8BA5 /* TripViewController.swift in Sources */,
+				5EE947B422681AA200FF8BA5 /* RoundTripViewController.swift in Sources */,
+				5EE947AB2267FF9700FF8BA5 /* RoundedCornersView.swift in Sources */,
+				5EE9479F2267E85D00FF8BA5 /* AMTabButton.swift in Sources */,
+				5EE947652267A4DB00FF8BA5 /* AppDelegate.swift in Sources */,
+				5EE947B22268197100FF8BA5 /* Constants.swift in Sources */,
+				5EE947A12267E85D00FF8BA5 /* AMLineView.swift in Sources */,
+				5EE947982267D8DA00FF8BA5 /* HomeViewController.swift in Sources */,
+				5EE947A92267FB9200FF8BA5 /* RoundedCornersButton.swift in Sources */,
+				5EE947B02268182A00FF8BA5 /* StoryboardsSegues.swift in Sources */,
+				5EE947A52267F4EA00FF8BA5 /* OneWayViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE947712267A4DD00FF8BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE9477A2267A4DD00FF8BA5 /* Fly365_MSTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5EE9477C2267A4DD00FF8BA5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5EE947852267A4DD00FF8BA5 /* Fly365_MSUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5EE947772267A4DD00FF8BA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EE947602267A4DB00FF8BA5 /* Fly365-MS */;
+			targetProxy = 5EE947762267A4DD00FF8BA5 /* PBXContainerItemProxy */;
+		};
+		5EE947822267A4DD00FF8BA5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5EE947602267A4DB00FF8BA5 /* Fly365-MS */;
+			targetProxy = 5EE947812267A4DD00FF8BA5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5EE947682267A4DB00FF8BA5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EE947692267A4DB00FF8BA5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5EE9476D2267A4DD00FF8BA5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5EE9476E2267A4DD00FF8BA5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5EE947872267A4DD00FF8BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		5EE947882267A4DD00FF8BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5EE9478A2267A4DD00FF8BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J83X3QNJRW;
+				INFOPLIST_FILE = "Fly365-MS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MSalah.Fly365-MS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		5EE9478B2267A4DD00FF8BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J83X3QNJRW;
+				INFOPLIST_FILE = "Fly365-MS/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MSalah.Fly365-MS";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		5EE9478D2267A4DD00FF8BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J83X3QNJRW;
+				INFOPLIST_FILE = "Fly365-MSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MSalah.Fly365-MSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fly365-MS.app/Fly365-MS";
+			};
+			name = Debug;
+		};
+		5EE9478E2267A4DD00FF8BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J83X3QNJRW;
+				INFOPLIST_FILE = "Fly365-MSTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MSalah.Fly365-MSTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Fly365-MS.app/Fly365-MS";
+			};
+			name = Release;
+		};
+		5EE947902267A4DD00FF8BA5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J83X3QNJRW;
+				INFOPLIST_FILE = "Fly365-MSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MSalah.Fly365-MSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fly365-MS";
+			};
+			name = Debug;
+		};
+		5EE947912267A4DD00FF8BA5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J83X3QNJRW;
+				INFOPLIST_FILE = "Fly365-MSUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.MSalah.Fly365-MSUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Fly365-MS";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5EE9475C2267A4DB00FF8BA5 /* Build configuration list for PBXProject "Fly365-MS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE947872267A4DD00FF8BA5 /* Debug */,
+				5EE947882267A4DD00FF8BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EE947892267A4DD00FF8BA5 /* Build configuration list for PBXNativeTarget "Fly365-MS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE9478A2267A4DD00FF8BA5 /* Debug */,
+				5EE9478B2267A4DD00FF8BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EE9478C2267A4DD00FF8BA5 /* Build configuration list for PBXNativeTarget "Fly365-MSTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE9478D2267A4DD00FF8BA5 /* Debug */,
+				5EE9478E2267A4DD00FF8BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5EE9478F2267A4DD00FF8BA5 /* Build configuration list for PBXNativeTarget "Fly365-MSUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5EE947902267A4DD00FF8BA5 /* Debug */,
+				5EE947912267A4DD00FF8BA5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5EE947592267A4DB00FF8BA5 /* Project object */;
+}

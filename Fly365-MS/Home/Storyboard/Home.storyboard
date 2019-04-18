@@ -1,0 +1,783 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3Ue-h9-glo">
+    <device id="retina3_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="muc-Nb-mmA">
+            <objects>
+                <navigationController id="3Ue-h9-glo" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hyR-9N-X9I">
+                        <rect key="frame" x="0.0" y="20" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="0n6-mo-dSS" kind="relationship" relationship="rootViewController" id="Afl-a8-IXn"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QIg-03-ImI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-926" y="-219"/>
+        </scene>
+        <!--Home View Controller-->
+        <scene sceneID="bIW-Zb-IPy">
+            <objects>
+                <viewController id="0n6-mo-dSS" customClass="HomeViewController" customModule="Fly365_MS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zrP-2q-VVl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Ew-dr-0F3">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="89"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="home-map" translatesAutoresizingMaskIntoConstraints="NO" id="gug-xp-vPG">
+                                        <rect key="frame" x="212" y="0.0" width="108" height="89"/>
+                                    </imageView>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fly-logo" translatesAutoresizingMaskIntoConstraints="NO" id="kFl-AN-HJk">
+                                        <rect key="frame" x="128" y="25" width="64" height="64"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="64" id="FHv-Re-ZDU"/>
+                                            <constraint firstAttribute="height" constant="64" id="qMS-iy-dzy"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.14117647058823529" green="0.16862745098039217" blue="0.27058823529411763" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="89" id="7Pn-wQ-D9W"/>
+                                    <constraint firstItem="gug-xp-vPG" firstAttribute="top" secondItem="0Ew-dr-0F3" secondAttribute="top" id="JIP-9o-0UH"/>
+                                    <constraint firstItem="kFl-AN-HJk" firstAttribute="centerX" secondItem="0Ew-dr-0F3" secondAttribute="centerX" id="Xfg-HK-xnP"/>
+                                    <constraint firstAttribute="bottom" secondItem="gug-xp-vPG" secondAttribute="bottom" id="iMa-k4-dSM"/>
+                                    <constraint firstItem="gug-xp-vPG" firstAttribute="leading" secondItem="kFl-AN-HJk" secondAttribute="trailing" constant="20" id="raQ-42-SJR"/>
+                                    <constraint firstItem="kFl-AN-HJk" firstAttribute="top" secondItem="0Ew-dr-0F3" secondAttribute="top" constant="25" id="tE1-RD-tCg"/>
+                                    <constraint firstAttribute="trailing" secondItem="gug-xp-vPG" secondAttribute="trailing" id="uhh-Aa-xk3"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="0Ew-dr-0F3" firstAttribute="top" secondItem="zrP-2q-VVl" secondAttribute="top" id="6wh-Tp-6AI"/>
+                            <constraint firstItem="0Ew-dr-0F3" firstAttribute="leading" secondItem="ab4-dC-hTL" secondAttribute="leading" id="IbL-0j-C4q"/>
+                            <constraint firstItem="0Ew-dr-0F3" firstAttribute="trailing" secondItem="ab4-dC-hTL" secondAttribute="trailing" id="li1-x1-FXB"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ab4-dC-hTL"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="cQ8-AW-yKl"/>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1ip-3s-2KM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162.40000000000001" y="-218.1409295352324"/>
+        </scene>
+        <!--Round Trip View Controller-->
+        <scene sceneID="OWm-xy-u5z">
+            <objects>
+                <viewController storyboardIdentifier="giftViewController" id="2CA-gw-ErE" customClass="RoundTripViewController" customModule="Fly365_MS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LJ7-kt-M6b">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LTa-is-m5J">
+                                <rect key="frame" x="16" y="44" width="288" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="j0j-8d-yrG" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="tLq-pG-Noq"/>
+                                        </constraints>
+                                        <state key="normal" title="Origin"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K5c-MV-J4p" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="0.0" width="144" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="78B-4U-Ff4"/>
+                                        </constraints>
+                                        <state key="normal" title="Destination"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IcW-BS-y6S" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="126" y="0.0" width="36" height="36"/>
+                                        <color key="backgroundColor" red="0.14117647059999999" green="0.16862745100000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="36" id="tcH-eL-s3O"/>
+                                            <constraint firstAttribute="height" constant="36" id="xxW-2b-GNX"/>
+                                        </constraints>
+                                        <state key="normal" image="swap"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3Sg-Nt-yMD" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="49" y="48" width="86.5" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="4ob-3N-9jG"/>
+                                        </constraints>
+                                        <state key="normal" title="Depart"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4dD-hv-C8s">
+                                        <rect key="frame" x="0.0" y="99" width="288" height="1"/>
+                                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="bRQ-Fl-z4S"/>
+                                        </constraints>
+                                    </view>
+                                    <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ggq-dH-Wle">
+                                        <rect key="frame" x="143.5" y="44" width="1" height="56"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="1" id="Fzx-hx-Y7A"/>
+                                        </constraints>
+                                    </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c8K-Ds-5RB" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="152.5" y="47" width="86.5" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="Lmr-Ij-hr0"/>
+                                        </constraints>
+                                        <state key="normal" title="Return"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="j0j-8d-yrG" firstAttribute="top" secondItem="LTa-is-m5J" secondAttribute="top" id="2Zj-gr-XkV"/>
+                                    <constraint firstItem="IcW-BS-y6S" firstAttribute="top" secondItem="LTa-is-m5J" secondAttribute="top" id="43a-om-Njj"/>
+                                    <constraint firstItem="IcW-BS-y6S" firstAttribute="centerX" secondItem="LTa-is-m5J" secondAttribute="centerX" id="485-5u-tbP"/>
+                                    <constraint firstItem="4dD-hv-C8s" firstAttribute="top" secondItem="c8K-Ds-5RB" secondAttribute="bottom" constant="16" id="4IR-XQ-32B"/>
+                                    <constraint firstItem="ggq-dH-Wle" firstAttribute="top" secondItem="j0j-8d-yrG" secondAttribute="bottom" constant="8" id="4d9-xl-0Ez"/>
+                                    <constraint firstAttribute="bottom" secondItem="3Sg-Nt-yMD" secondAttribute="bottom" constant="16" id="AgX-u6-5fG"/>
+                                    <constraint firstAttribute="trailing" secondItem="K5c-MV-J4p" secondAttribute="trailing" id="Bc0-oD-QSM"/>
+                                    <constraint firstItem="K5c-MV-J4p" firstAttribute="width" secondItem="LTa-is-m5J" secondAttribute="width" multiplier="0.5" id="F7Q-oz-IYm"/>
+                                    <constraint firstAttribute="trailing" secondItem="4dD-hv-C8s" secondAttribute="trailing" id="GEh-I3-fKO"/>
+                                    <constraint firstItem="ggq-dH-Wle" firstAttribute="centerX" secondItem="LTa-is-m5J" secondAttribute="centerX" id="HGo-VL-PdP"/>
+                                    <constraint firstItem="4dD-hv-C8s" firstAttribute="leading" secondItem="LTa-is-m5J" secondAttribute="leading" id="IeU-NB-1j5"/>
+                                    <constraint firstAttribute="bottom" secondItem="4dD-hv-C8s" secondAttribute="bottom" id="KjK-8O-6Py"/>
+                                    <constraint firstItem="K5c-MV-J4p" firstAttribute="top" secondItem="LTa-is-m5J" secondAttribute="top" id="Ky7-DJ-Hgy"/>
+                                    <constraint firstItem="c8K-Ds-5RB" firstAttribute="leading" secondItem="ggq-dH-Wle" secondAttribute="trailing" constant="8" id="RcS-n0-DaU"/>
+                                    <constraint firstItem="j0j-8d-yrG" firstAttribute="leading" secondItem="LTa-is-m5J" secondAttribute="leading" id="VzG-XQ-xsl"/>
+                                    <constraint firstItem="c8K-Ds-5RB" firstAttribute="width" secondItem="LTa-is-m5J" secondAttribute="width" multiplier="0.3" id="YJr-f4-8qd"/>
+                                    <constraint firstAttribute="height" constant="100" id="axp-bd-Lss"/>
+                                    <constraint firstItem="3Sg-Nt-yMD" firstAttribute="width" secondItem="LTa-is-m5J" secondAttribute="width" multiplier="0.3" id="cHq-UA-mOR"/>
+                                    <constraint firstItem="j0j-8d-yrG" firstAttribute="width" secondItem="LTa-is-m5J" secondAttribute="width" multiplier="0.5" id="gQ2-sW-nFF"/>
+                                    <constraint firstItem="ggq-dH-Wle" firstAttribute="leading" secondItem="3Sg-Nt-yMD" secondAttribute="trailing" constant="8" id="qlC-I8-d8d"/>
+                                    <constraint firstAttribute="bottom" secondItem="ggq-dH-Wle" secondAttribute="bottom" id="zOF-mp-akr"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aMo-Kf-fx8" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="168" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="nzx-q0-wCp"/>
+                                </constraints>
+                                <state key="normal" title="2 Passengers, Economy"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didPressPassangers:" destination="2CA-gw-ErE" eventType="touchUpInside" id="QMc-6x-EU4"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Pf-dO-D9m" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="330" width="288" height="36"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.68235294120000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="YWE-J5-Med"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="4vK-YB-MgF" firstAttribute="trailing" secondItem="LTa-is-m5J" secondAttribute="trailing" constant="16" id="6Tp-FT-tDX"/>
+                            <constraint firstItem="aMo-Kf-fx8" firstAttribute="leading" secondItem="4vK-YB-MgF" secondAttribute="leading" constant="16" id="6U2-El-3PJ"/>
+                            <constraint firstItem="LTa-is-m5J" firstAttribute="top" secondItem="4vK-YB-MgF" secondAttribute="top" constant="24" id="8oV-Dd-7AK"/>
+                            <constraint firstItem="0Pf-dO-D9m" firstAttribute="leading" secondItem="4vK-YB-MgF" secondAttribute="leading" constant="16" id="EA2-qG-lo8"/>
+                            <constraint firstItem="4vK-YB-MgF" firstAttribute="trailing" secondItem="0Pf-dO-D9m" secondAttribute="trailing" constant="16" id="IUS-11-kuC"/>
+                            <constraint firstItem="4vK-YB-MgF" firstAttribute="trailing" secondItem="aMo-Kf-fx8" secondAttribute="trailing" constant="16" id="Iqj-y5-sg6"/>
+                            <constraint firstItem="4vK-YB-MgF" firstAttribute="bottom" secondItem="0Pf-dO-D9m" secondAttribute="bottom" constant="114" id="jHW-2B-cf9"/>
+                            <constraint firstItem="aMo-Kf-fx8" firstAttribute="top" secondItem="LTa-is-m5J" secondAttribute="bottom" constant="24" id="s5N-6t-H07"/>
+                            <constraint firstItem="LTa-is-m5J" firstAttribute="leading" secondItem="4vK-YB-MgF" secondAttribute="leading" constant="16" id="wKg-kv-2NU"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="4vK-YB-MgF"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDeparture" destination="3Sg-Nt-yMD" id="XHx-xZ-fI1"/>
+                        <outlet property="btnDestination" destination="K5c-MV-J4p" id="I68-9E-BQM"/>
+                        <outlet property="btnOrigin" destination="j0j-8d-yrG" id="M3N-37-Ufj"/>
+                        <outlet property="btnPassangers" destination="aMo-Kf-fx8" id="Hsk-p2-RUh"/>
+                        <outlet property="btnReturn" destination="c8K-Ds-5RB" id="Qvi-wG-NcR"/>
+                        <outlet property="btnSwitch" destination="IcW-BS-y6S" id="K3E-RR-9DV"/>
+                        <segue destination="ZfH-Fg-hsE" kind="presentation" identifier="passanger" id="Srm-ea-OGR"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="GAE-xH-a9v" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="-224"/>
+        </scene>
+        <!--Trip Info View Controller-->
+        <scene sceneID="U57-UC-OUe">
+            <objects>
+                <viewController id="ZfH-Fg-hsE" customClass="TripInfoViewController" customModule="Fly365_MS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8jO-kH-GgT">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XaK-83-xZ0">
+                                <rect key="frame" x="16" y="32" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="TYW-KH-fYp"/>
+                                    <constraint firstAttribute="width" constant="30" id="U7F-LC-UIZ"/>
+                                </constraints>
+                                <state key="normal" title="X">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="didPressDismiss:" destination="ZfH-Fg-hsE" eventType="touchUpInside" id="hM1-Dp-Uue"/>
+                                </connections>
+                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="zDp-J1-u0S">
+                                <rect key="frame" x="16" y="138" width="288" height="140"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BMk-S1-DN1">
+                                        <rect key="frame" x="0.0" y="0.0" width="288" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adult" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3iy-z0-962">
+                                                <rect key="frame" x="8" y="10" width="60" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="dpi-pK-RzF"/>
+                                                    <constraint firstAttribute="height" constant="20" id="zb4-UJ-GzA"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iix-Rw-qm8" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                                <rect key="frame" x="255" y="7.5" width="25" height="25"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="2oD-O7-Cqo"/>
+                                                    <constraint firstAttribute="height" constant="25" id="FyT-5V-aMU"/>
+                                                </constraints>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XFt-0L-vdS" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                                <rect key="frame" x="197" y="7.5" width="25" height="25"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="30T-dk-THI"/>
+                                                    <constraint firstAttribute="width" constant="25" id="tfK-QW-Up2"/>
+                                                </constraints>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lno-BU-yVd">
+                                                <rect key="frame" x="226" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="VFM-e1-kBc"/>
+                                                    <constraint firstAttribute="width" constant="25" id="qfs-bH-uN0"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Lno-BU-yVd" firstAttribute="leading" secondItem="XFt-0L-vdS" secondAttribute="trailing" constant="4" id="8vn-W1-FAe"/>
+                                            <constraint firstAttribute="trailing" secondItem="iix-Rw-qm8" secondAttribute="trailing" constant="8" id="MeR-Oe-Ft6"/>
+                                            <constraint firstItem="Lno-BU-yVd" firstAttribute="centerY" secondItem="BMk-S1-DN1" secondAttribute="centerY" id="VYU-ww-9jd"/>
+                                            <constraint firstItem="XFt-0L-vdS" firstAttribute="centerY" secondItem="BMk-S1-DN1" secondAttribute="centerY" id="frB-ew-hEO"/>
+                                            <constraint firstItem="3iy-z0-962" firstAttribute="leading" secondItem="BMk-S1-DN1" secondAttribute="leading" constant="8" id="hl3-JZ-5HE"/>
+                                            <constraint firstItem="iix-Rw-qm8" firstAttribute="leading" secondItem="Lno-BU-yVd" secondAttribute="trailing" constant="4" id="hnS-sf-Gex"/>
+                                            <constraint firstItem="3iy-z0-962" firstAttribute="centerY" secondItem="BMk-S1-DN1" secondAttribute="centerY" id="oTb-0F-U1t"/>
+                                            <constraint firstItem="iix-Rw-qm8" firstAttribute="centerY" secondItem="BMk-S1-DN1" secondAttribute="centerY" id="yby-4G-H6a"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M6v-eM-yB7">
+                                        <rect key="frame" x="0.0" y="50" width="288" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Child" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gta-S4-EW3">
+                                                <rect key="frame" x="8" y="10" width="60" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="20" id="GNB-XY-5c1"/>
+                                                    <constraint firstAttribute="width" constant="60" id="XEZ-hw-ECV"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Umb-YK-BuF" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                                <rect key="frame" x="255" y="7.5" width="25" height="25"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="700-r6-7fj"/>
+                                                    <constraint firstAttribute="width" constant="25" id="P6X-G6-TSW"/>
+                                                </constraints>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Ev-2T-HZ1" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                                <rect key="frame" x="197" y="7.5" width="25" height="25"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="I0v-iX-C8G"/>
+                                                    <constraint firstAttribute="width" constant="25" id="foZ-bl-SGT"/>
+                                                </constraints>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rxf-Ae-vfU">
+                                                <rect key="frame" x="226" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="25" id="fcV-ab-htN"/>
+                                                    <constraint firstAttribute="height" constant="25" id="r0Q-LD-J6x"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="Umb-YK-BuF" firstAttribute="leading" secondItem="rxf-Ae-vfU" secondAttribute="trailing" constant="4" id="2aD-xR-UgX"/>
+                                            <constraint firstItem="6Ev-2T-HZ1" firstAttribute="centerY" secondItem="M6v-eM-yB7" secondAttribute="centerY" id="Dkb-sk-mMW"/>
+                                            <constraint firstItem="Gta-S4-EW3" firstAttribute="centerY" secondItem="M6v-eM-yB7" secondAttribute="centerY" id="Get-Ke-Ho9"/>
+                                            <constraint firstAttribute="trailing" secondItem="Umb-YK-BuF" secondAttribute="trailing" constant="8" id="TqK-fJ-93N"/>
+                                            <constraint firstItem="Gta-S4-EW3" firstAttribute="leading" secondItem="M6v-eM-yB7" secondAttribute="leading" constant="8" id="Uvy-YD-4Uh"/>
+                                            <constraint firstItem="rxf-Ae-vfU" firstAttribute="centerY" secondItem="M6v-eM-yB7" secondAttribute="centerY" id="qp8-YX-ISQ"/>
+                                            <constraint firstItem="Umb-YK-BuF" firstAttribute="centerY" secondItem="M6v-eM-yB7" secondAttribute="centerY" id="uEH-4D-1rb"/>
+                                            <constraint firstItem="rxf-Ae-vfU" firstAttribute="leading" secondItem="6Ev-2T-HZ1" secondAttribute="trailing" constant="4" id="wV2-Xi-0T7"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P4p-MW-DfM">
+                                        <rect key="frame" x="0.0" y="100" width="288" height="40"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Infant" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="F0F-2V-2ij">
+                                                <rect key="frame" x="8" y="10" width="60" height="20"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="60" id="DVP-mw-nrA"/>
+                                                    <constraint firstAttribute="height" constant="20" id="qIq-yI-L8F"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VW5-PK-qYC" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                                <rect key="frame" x="255" y="7.5" width="25" height="25"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="4ch-YV-4cm"/>
+                                                    <constraint firstAttribute="width" constant="25" id="B5l-7J-sfM"/>
+                                                </constraints>
+                                                <state key="normal" title="+">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ydi-Ch-WQr" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                                <rect key="frame" x="197" y="7.5" width="25" height="25"/>
+                                                <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="KfX-ok-0Ag"/>
+                                                    <constraint firstAttribute="width" constant="25" id="ojW-aD-kXS"/>
+                                                </constraints>
+                                                <state key="normal" title="-">
+                                                    <color key="titleColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <userDefinedRuntimeAttributes>
+                                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                        <real key="value" value="4"/>
+                                                    </userDefinedRuntimeAttribute>
+                                                </userDefinedRuntimeAttributes>
+                                            </button>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qji-bz-fLh">
+                                                <rect key="frame" x="226" y="7.5" width="25" height="25"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="25" id="RCj-c8-G4R"/>
+                                                    <constraint firstAttribute="width" constant="25" id="a3z-Qo-rCi"/>
+                                                </constraints>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="ydi-Ch-WQr" firstAttribute="centerY" secondItem="P4p-MW-DfM" secondAttribute="centerY" id="0h7-Ix-SAB"/>
+                                            <constraint firstItem="VW5-PK-qYC" firstAttribute="centerY" secondItem="P4p-MW-DfM" secondAttribute="centerY" id="7Bc-ov-CgR"/>
+                                            <constraint firstItem="VW5-PK-qYC" firstAttribute="leading" secondItem="qji-bz-fLh" secondAttribute="trailing" constant="4" id="Ajb-wM-1TL"/>
+                                            <constraint firstItem="F0F-2V-2ij" firstAttribute="centerY" secondItem="P4p-MW-DfM" secondAttribute="centerY" id="Wt6-Vx-cDL"/>
+                                            <constraint firstItem="qji-bz-fLh" firstAttribute="centerY" secondItem="P4p-MW-DfM" secondAttribute="centerY" id="Xpa-S5-LDO"/>
+                                            <constraint firstAttribute="trailing" secondItem="VW5-PK-qYC" secondAttribute="trailing" constant="8" id="gYI-4X-OXn"/>
+                                            <constraint firstItem="F0F-2V-2ij" firstAttribute="leading" secondItem="P4p-MW-DfM" secondAttribute="leading" constant="8" id="hb2-pG-lpf"/>
+                                            <constraint firstItem="qji-bz-fLh" firstAttribute="leading" secondItem="ydi-Ch-WQr" secondAttribute="trailing" constant="4" id="vn2-Cc-RaK"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="Ua8-oL-FbN"/>
+                                </constraints>
+                            </stackView>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jjv-7T-Gif">
+                                <rect key="frame" x="16" y="78" width="288" height="29"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="40A-eo-uAd"/>
+                                </constraints>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Business"/>
+                                    <segment title="Premium"/>
+                                </segments>
+                            </segmentedControl>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="d1u-Wh-QcG" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="420" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="LsL-FW-RVE"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Apply">
+                                    <color key="titleColor" red="0.95294117649999999" green="0.68235294120000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didPressDismiss:" destination="ZfH-Fg-hsE" eventType="touchUpInside" id="yrF-Op-cGX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PXZ-XZ-CYd" firstAttribute="trailing" secondItem="d1u-Wh-QcG" secondAttribute="trailing" constant="16" id="8WW-FL-VBr"/>
+                            <constraint firstItem="XaK-83-xZ0" firstAttribute="top" secondItem="PXZ-XZ-CYd" secondAttribute="top" constant="12" id="9e9-Jy-PQe"/>
+                            <constraint firstItem="PXZ-XZ-CYd" firstAttribute="trailing" secondItem="zDp-J1-u0S" secondAttribute="trailing" constant="16" id="E2p-d8-6dK"/>
+                            <constraint firstItem="PXZ-XZ-CYd" firstAttribute="trailing" secondItem="jjv-7T-Gif" secondAttribute="trailing" constant="16" id="FPD-88-41x"/>
+                            <constraint firstItem="jjv-7T-Gif" firstAttribute="leading" secondItem="PXZ-XZ-CYd" secondAttribute="leading" constant="16" id="RlQ-ry-AML"/>
+                            <constraint firstItem="jjv-7T-Gif" firstAttribute="top" secondItem="XaK-83-xZ0" secondAttribute="bottom" constant="16" id="WmQ-KO-0yE"/>
+                            <constraint firstItem="d1u-Wh-QcG" firstAttribute="leading" secondItem="PXZ-XZ-CYd" secondAttribute="leading" constant="16" id="Wy8-8F-X9v"/>
+                            <constraint firstItem="XaK-83-xZ0" firstAttribute="leading" secondItem="PXZ-XZ-CYd" secondAttribute="leading" constant="16" id="pFQ-3Y-i1N"/>
+                            <constraint firstItem="zDp-J1-u0S" firstAttribute="leading" secondItem="PXZ-XZ-CYd" secondAttribute="leading" constant="16" id="q7s-0u-8Uc"/>
+                            <constraint firstItem="zDp-J1-u0S" firstAttribute="top" secondItem="jjv-7T-Gif" secondAttribute="bottom" constant="32" id="qVj-lK-By8"/>
+                            <constraint firstItem="PXZ-XZ-CYd" firstAttribute="bottom" secondItem="d1u-Wh-QcG" secondAttribute="bottom" constant="24" id="u8I-8Y-Kl6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PXZ-XZ-CYd"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="mkx-R6-uRC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1866" y="-219"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="5Qr-O4-vZm">
+            <objects>
+                <viewController storyboardIdentifier="shoeViewController" id="Vk5-9E-QMg" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="eir-DD-Wq4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shoe" translatesAutoresizingMaskIntoConstraints="NO" id="Fb3-xE-igQ">
+                                <rect key="frame" x="60" y="140" width="200" height="200"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="H4p-rX-cjt"/>
+                                    <constraint firstAttribute="height" constant="200" id="JU6-Tr-5ai"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Fb3-xE-igQ" firstAttribute="centerX" secondItem="eir-DD-Wq4" secondAttribute="centerX" id="4Xw-B4-Xnx"/>
+                            <constraint firstItem="Fb3-xE-igQ" firstAttribute="centerY" secondItem="eir-DD-Wq4" secondAttribute="centerY" id="SwK-bq-SlS"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="03I-Yj-jIf"/>
+                    </view>
+                    <connections>
+                        <segue destination="ZfH-Fg-hsE" kind="presentation" identifier="passanger" id="GwZ-Vn-QBo"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kbb-DZ-OGP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="714" y="494"/>
+        </scene>
+        <!--One Way View Controller-->
+        <scene sceneID="4qC-If-4oO">
+            <objects>
+                <viewController storyboardIdentifier="airplaneViewController" id="LvM-jT-1es" customClass="OneWayViewController" customModule="Fly365_MS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="12K-M2-OHs">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Vfu-kC-7CU">
+                                <rect key="frame" x="16" y="40" width="288" height="100"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U7r-bA-nmM" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="144" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="KNG-1z-f1Q"/>
+                                        </constraints>
+                                        <state key="normal" title="Origin"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="t8K-gC-v8H" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="144" y="0.0" width="144" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="6o9-56-qhH"/>
+                                        </constraints>
+                                        <state key="normal" title="Destination"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Ya-ls-1pC" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="126" y="0.0" width="36" height="36"/>
+                                        <color key="backgroundColor" red="0.14117647059999999" green="0.16862745100000001" blue="0.27058823529999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="stt-p2-eP1"/>
+                                            <constraint firstAttribute="width" constant="36" id="zEz-Mr-cld"/>
+                                        </constraints>
+                                        <state key="normal" image="swap"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="18"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m5H-k9-MJZ" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                        <rect key="frame" x="72" y="48" width="144" height="36"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="36" id="UjQ-Yf-Bg5"/>
+                                        </constraints>
+                                        <state key="normal" title="Depart"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="8"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="u8x-64-2Rb">
+                                        <rect key="frame" x="0.0" y="99" width="288" height="1"/>
+                                        <color key="backgroundColor" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="1" id="FzS-CD-Z1b"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstItem="m5H-k9-MJZ" firstAttribute="centerX" secondItem="Vfu-kC-7CU" secondAttribute="centerX" id="5jn-IF-cW6"/>
+                                    <constraint firstItem="U7r-bA-nmM" firstAttribute="top" secondItem="Vfu-kC-7CU" secondAttribute="top" id="6Ou-XJ-eNM"/>
+                                    <constraint firstItem="u8x-64-2Rb" firstAttribute="leading" secondItem="Vfu-kC-7CU" secondAttribute="leading" id="73Y-U2-0UD"/>
+                                    <constraint firstItem="U7r-bA-nmM" firstAttribute="leading" secondItem="Vfu-kC-7CU" secondAttribute="leading" id="FiL-6Y-YSS"/>
+                                    <constraint firstAttribute="height" constant="100" id="KnC-kf-doB"/>
+                                    <constraint firstItem="0Ya-ls-1pC" firstAttribute="top" secondItem="Vfu-kC-7CU" secondAttribute="top" id="L7L-rZ-fLT"/>
+                                    <constraint firstItem="t8K-gC-v8H" firstAttribute="top" secondItem="Vfu-kC-7CU" secondAttribute="top" id="VEq-4c-1kB"/>
+                                    <constraint firstItem="m5H-k9-MJZ" firstAttribute="width" secondItem="Vfu-kC-7CU" secondAttribute="width" multiplier="0.5" id="Yhc-ON-KQv"/>
+                                    <constraint firstAttribute="trailing" secondItem="t8K-gC-v8H" secondAttribute="trailing" id="bzz-vW-oiH"/>
+                                    <constraint firstItem="t8K-gC-v8H" firstAttribute="width" secondItem="Vfu-kC-7CU" secondAttribute="width" multiplier="0.5" id="gGp-FG-tan"/>
+                                    <constraint firstItem="U7r-bA-nmM" firstAttribute="width" secondItem="Vfu-kC-7CU" secondAttribute="width" multiplier="0.5" id="hKc-fu-Lko"/>
+                                    <constraint firstAttribute="trailing" secondItem="u8x-64-2Rb" secondAttribute="trailing" id="igV-1B-tbx"/>
+                                    <constraint firstItem="0Ya-ls-1pC" firstAttribute="centerX" secondItem="Vfu-kC-7CU" secondAttribute="centerX" id="nIQ-xx-7bT"/>
+                                    <constraint firstAttribute="bottom" secondItem="u8x-64-2Rb" secondAttribute="bottom" id="oDg-Cy-A15"/>
+                                    <constraint firstAttribute="bottom" secondItem="m5H-k9-MJZ" secondAttribute="bottom" constant="16" id="unq-LX-znG"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KTS-Qb-JGs" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="164" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="jPx-Ec-ADX"/>
+                                </constraints>
+                                <state key="normal" title="2 Passengers, Economy"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                        <real key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                        <color key="value" red="0.86666666670000003" green="0.86666666670000003" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="didPressPassangers:" destination="LvM-jT-1es" eventType="touchUpInside" id="rvS-OE-a07"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gM9-o4-kxF" customClass="RoundedCornersButton" customModule="Fly365_MS" customModuleProvider="target">
+                                <rect key="frame" x="16" y="330" width="288" height="36"/>
+                                <color key="backgroundColor" red="0.95294117649999999" green="0.68235294120000001" blue="0.23921568630000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="FAo-Sv-l2D"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Search">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="8"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="Vfu-kC-7CU" firstAttribute="leading" secondItem="srf-Uy-eFq" secondAttribute="leading" constant="16" id="0v9-Ib-bLO"/>
+                            <constraint firstItem="Vfu-kC-7CU" firstAttribute="top" secondItem="srf-Uy-eFq" secondAttribute="top" constant="20" id="4Er-rM-XcS"/>
+                            <constraint firstItem="KTS-Qb-JGs" firstAttribute="leading" secondItem="srf-Uy-eFq" secondAttribute="leading" constant="16" id="5qx-za-Dol"/>
+                            <constraint firstItem="srf-Uy-eFq" firstAttribute="bottom" secondItem="gM9-o4-kxF" secondAttribute="bottom" constant="114" id="CCm-yG-k8f"/>
+                            <constraint firstItem="gM9-o4-kxF" firstAttribute="leading" secondItem="srf-Uy-eFq" secondAttribute="leading" constant="16" id="Ryd-m8-QUd"/>
+                            <constraint firstItem="KTS-Qb-JGs" firstAttribute="top" secondItem="Vfu-kC-7CU" secondAttribute="bottom" constant="24" id="Zh8-4i-l4b"/>
+                            <constraint firstItem="srf-Uy-eFq" firstAttribute="trailing" secondItem="Vfu-kC-7CU" secondAttribute="trailing" constant="16" id="e2w-Vu-hNe"/>
+                            <constraint firstItem="srf-Uy-eFq" firstAttribute="trailing" secondItem="KTS-Qb-JGs" secondAttribute="trailing" constant="16" id="mnR-D5-1Mk"/>
+                            <constraint firstItem="srf-Uy-eFq" firstAttribute="trailing" secondItem="gM9-o4-kxF" secondAttribute="trailing" constant="16" id="qnN-TB-joZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="srf-Uy-eFq"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnDeparture" destination="m5H-k9-MJZ" id="pGB-0C-ccp"/>
+                        <outlet property="btnDestination" destination="t8K-gC-v8H" id="xpU-qr-cbX"/>
+                        <outlet property="btnOrigin" destination="U7r-bA-nmM" id="5qr-pU-r6G"/>
+                        <outlet property="btnPassangers" destination="KTS-Qb-JGs" id="zWw-b2-0Y6"/>
+                        <outlet property="btnSwitch" destination="0Ya-ls-1pC" id="hTT-8j-7UM"/>
+                        <segue destination="ZfH-Fg-hsE" kind="presentation" identifier="passanger" id="aoh-EQ-rc4"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="so8-eO-6Qx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="712.5" y="-931.25"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fly-logo" width="512" height="512"/>
+        <image name="home-map" width="579" height="342"/>
+        <image name="shoe" width="405.09890747070312" height="405.09890747070312"/>
+        <image name="swap" width="48" height="48"/>
+    </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="aoh-EQ-rc4"/>
+    </inferredMetricsTieBreakers>
+</document>
