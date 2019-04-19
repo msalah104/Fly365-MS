@@ -1,0 +1,30 @@
+[
+        {
+            "name":"Cairo International Airport",
+            "cityName":"Cairo",
+            "countryName":"Egypt",
+            "code":"CAI",
+        },
+        
+        {
+            "name":"Hurghada Airport",
+            "cityName":"Hurghada",
+            "countryName":"Egypt",
+            "code":"HRG",
+        },
+        
+        {
+            "name":"Frankfurt International Airport",
+            "cityName":"Frankfurt",
+            "countryName":"Germany",
+            "code":"FRA",
+        },
+        
+        {
+            "name":"Los Angeles International Airport",
+            "cityName":"Los Angeles",
+            "countryName":"USA",
+            "code":"Lax",
+        }
+    
+    ]

@@ -1,5 +1,5 @@
 //
-//  StoryboardsSegues.swift
+//  BaseViewModel.swift
 //  Fly365-MS
 //
 //  Created by Mohammed Salah on 4/18/19.
@@ -8,8 +8,6 @@
 
 import UIKit
 
-struct StoryboardsSegues {
-    
-    static let SELECT_PASSANGER = "passanger"
+class BaseViewModel: NSObject {
 
 }

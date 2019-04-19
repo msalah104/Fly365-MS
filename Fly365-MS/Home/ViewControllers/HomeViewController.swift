@@ -27,6 +27,8 @@ class HomeViewController: AMPagerTabsViewController {
         
     }
     
+    
+    //TODO : Update the naming of the method
     func getTabs() -> [UIViewController]{
         // instantiate the viewControllers
         let airplaneViewController = self.storyboard?.instantiateViewController(withIdentifier: "airplaneViewController")
@@ -35,8 +37,9 @@ class HomeViewController: AMPagerTabsViewController {
         
         // set the title for the tabs
         airplaneViewController?.title = "One Way"
-        shoeViewController?.title = "Round Trip"
-        giftViewController?.title = "Multi City"
+        giftViewController?.title = "Round Trip"
+        shoeViewController?.title = "Multi City"
+        
         
         return [airplaneViewController!,giftViewController!,shoeViewController!]
     }

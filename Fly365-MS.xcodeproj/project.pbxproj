@@ -7,6 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5EADC1A22269F72B00AD134B /* TripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1A12269F72B00AD134B /* TripViewModel.swift */; };
+		5EADC1A42269F76D00AD134B /* TripFormRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1A32269F76D00AD134B /* TripFormRequest.swift */; };
+		5EADC1A62269F7C800AD134B /* Step.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1A52269F7C800AD134B /* Step.swift */; };
+		5EADC1A82269FB1100AD134B /* RoundTripViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1A72269FB1100AD134B /* RoundTripViewModel.swift */; };
+		5EADC1AB226A0A2300AD134B /* EXT+UIToolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1AA226A0A2300AD134B /* EXT+UIToolbar.swift */; };
+		5EADC1AD226A27D700AD134B /* TripInfoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1AC226A27D700AD134B /* TripInfoViewModel.swift */; };
+		5EADC1AF226A45F000AD134B /* FlyUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1AE226A45F000AD134B /* FlyUtils.swift */; };
+		5EADC1B1226A4E0C00AD134B /* FlyErrorMessages.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1B0226A4E0C00AD134B /* FlyErrorMessages.swift */; };
+		5EADC1B4226A57DB00AD134B /* Leg.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1B3226A57DA00AD134B /* Leg.swift */; };
+		5EADC1B6226A598C00AD134B /* Carrier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1B5226A598C00AD134B /* Carrier.swift */; };
+		5EADC1B8226A5A0C00AD134B /* Segment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1B7226A5A0C00AD134B /* Segment.swift */; };
+		5EADC1BA226A5FD400AD134B /* EndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1B9226A5FD400AD134B /* EndPoint.swift */; };
+		5EADC1BC226A603000AD134B /* FlightTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1BB226A603000AD134B /* FlightTime.swift */; };
+		5EADC1BE226A620300AD134B /* StopEndPoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1BD226A620300AD134B /* StopEndPoint.swift */; };
+		5EADC1C0226A624F00AD134B /* Stop.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1BF226A624F00AD134B /* Stop.swift */; };
+		5EADC1C2226A630000AD134B /* FuellingStops.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1C1226A630000AD134B /* FuellingStops.swift */; };
+		5EADC1C4226A636200AD134B /* Aircraft.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1C3226A636200AD134B /* Aircraft.swift */; };
+		5EADC1C6226A645800AD134B /* FlightInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1C5226A645800AD134B /* FlightInfo.swift */; };
+		5EADC1C8226A66EB00AD134B /* FlightSearchResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1C7226A66EB00AD134B /* FlightSearchResponse.swift */; };
+		5EADC1CA226A671F00AD134B /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1C9226A671F00AD134B /* Flight.swift */; };
+		5EADC1CC226A67FE00AD134B /* FlightPrice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1CB226A67FE00AD134B /* FlightPrice.swift */; };
+		5EADC1CE226A688C00AD134B /* PassangerCost.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EADC1CD226A688C00AD134B /* PassangerCost.swift */; };
 		5EE947652267A4DB00FF8BA5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947642267A4DB00FF8BA5 /* AppDelegate.swift */; };
 		5EE947672267A4DB00FF8BA5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947662267A4DB00FF8BA5 /* ViewController.swift */; };
 		5EE9476A2267A4DB00FF8BA5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5EE947682267A4DB00FF8BA5 /* Main.storyboard */; };
@@ -24,9 +46,15 @@
 		5EE947A92267FB9200FF8BA5 /* RoundedCornersButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947A82267FB9100FF8BA5 /* RoundedCornersButton.swift */; };
 		5EE947AB2267FF9700FF8BA5 /* RoundedCornersView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947AA2267FF9700FF8BA5 /* RoundedCornersView.swift */; };
 		5EE947AD2268015900FF8BA5 /* TripInfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947AC2268015900FF8BA5 /* TripInfoViewController.swift */; };
-		5EE947B02268182A00FF8BA5 /* StoryboardsSegues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947AF2268182A00FF8BA5 /* StoryboardsSegues.swift */; };
 		5EE947B22268197100FF8BA5 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947B12268197100FF8BA5 /* Constants.swift */; };
 		5EE947B422681AA200FF8BA5 /* RoundTripViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947B322681AA200FF8BA5 /* RoundTripViewController.swift */; };
+		5EE947B622687B9A00FF8BA5 /* AirportSelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947B522687B9A00FF8BA5 /* AirportSelectionViewController.swift */; };
+		5EE947B922687E7400FF8BA5 /* AirportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947B822687E7400FF8BA5 /* AirportsViewModel.swift */; };
+		5EE947BC22687EA000FF8BA5 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947BB22687EA000FF8BA5 /* Airport.swift */; };
+		5EE947BE22687FA400FF8BA5 /* airport.json in Resources */ = {isa = PBXBuildFile; fileRef = 5EE947BD22687FA400FF8BA5 /* airport.json */; };
+		5EE947C122688DAC00FF8BA5 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947C022688DAC00FF8BA5 /* BaseViewController.swift */; };
+		5EE947C322688DC300FF8BA5 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947C222688DC300FF8BA5 /* BaseViewModel.swift */; };
+		5EE947C52268947E00FF8BA5 /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5EE947C42268947E00FF8BA5 /* StoryBoards.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +75,28 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5EADC1A12269F72B00AD134B /* TripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripViewModel.swift; sourceTree = "<group>"; };
+		5EADC1A32269F76D00AD134B /* TripFormRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripFormRequest.swift; sourceTree = "<group>"; };
+		5EADC1A52269F7C800AD134B /* Step.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Step.swift; sourceTree = "<group>"; };
+		5EADC1A72269FB1100AD134B /* RoundTripViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTripViewModel.swift; sourceTree = "<group>"; };
+		5EADC1AA226A0A2300AD134B /* EXT+UIToolbar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "EXT+UIToolbar.swift"; sourceTree = "<group>"; };
+		5EADC1AC226A27D700AD134B /* TripInfoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoViewModel.swift; sourceTree = "<group>"; };
+		5EADC1AE226A45F000AD134B /* FlyUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyUtils.swift; sourceTree = "<group>"; };
+		5EADC1B0226A4E0C00AD134B /* FlyErrorMessages.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyErrorMessages.swift; sourceTree = "<group>"; };
+		5EADC1B3226A57DA00AD134B /* Leg.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Leg.swift; sourceTree = "<group>"; };
+		5EADC1B5226A598C00AD134B /* Carrier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Carrier.swift; sourceTree = "<group>"; };
+		5EADC1B7226A5A0C00AD134B /* Segment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Segment.swift; sourceTree = "<group>"; };
+		5EADC1B9226A5FD400AD134B /* EndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EndPoint.swift; sourceTree = "<group>"; };
+		5EADC1BB226A603000AD134B /* FlightTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightTime.swift; sourceTree = "<group>"; };
+		5EADC1BD226A620300AD134B /* StopEndPoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StopEndPoint.swift; sourceTree = "<group>"; };
+		5EADC1BF226A624F00AD134B /* Stop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Stop.swift; sourceTree = "<group>"; };
+		5EADC1C1226A630000AD134B /* FuellingStops.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuellingStops.swift; sourceTree = "<group>"; };
+		5EADC1C3226A636200AD134B /* Aircraft.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Aircraft.swift; sourceTree = "<group>"; };
+		5EADC1C5226A645800AD134B /* FlightInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightInfo.swift; sourceTree = "<group>"; };
+		5EADC1C7226A66EB00AD134B /* FlightSearchResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightSearchResponse.swift; sourceTree = "<group>"; };
+		5EADC1C9226A671F00AD134B /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		5EADC1CB226A67FE00AD134B /* FlightPrice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightPrice.swift; sourceTree = "<group>"; };
+		5EADC1CD226A688C00AD134B /* PassangerCost.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassangerCost.swift; sourceTree = "<group>"; };
 		5EE947612267A4DB00FF8BA5 /* Fly365-MS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fly365-MS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5EE947642267A4DB00FF8BA5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5EE947662267A4DB00FF8BA5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -70,9 +120,15 @@
 		5EE947A82267FB9100FF8BA5 /* RoundedCornersButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersButton.swift; sourceTree = "<group>"; };
 		5EE947AA2267FF9700FF8BA5 /* RoundedCornersView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedCornersView.swift; sourceTree = "<group>"; };
 		5EE947AC2268015900FF8BA5 /* TripInfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripInfoViewController.swift; sourceTree = "<group>"; };
-		5EE947AF2268182A00FF8BA5 /* StoryboardsSegues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardsSegues.swift; sourceTree = "<group>"; };
 		5EE947B12268197100FF8BA5 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		5EE947B322681AA200FF8BA5 /* RoundTripViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundTripViewController.swift; sourceTree = "<group>"; };
+		5EE947B522687B9A00FF8BA5 /* AirportSelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportSelectionViewController.swift; sourceTree = "<group>"; };
+		5EE947B822687E7400FF8BA5 /* AirportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewModel.swift; sourceTree = "<group>"; };
+		5EE947BB22687EA000FF8BA5 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		5EE947BD22687FA400FF8BA5 /* airport.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = airport.json; sourceTree = "<group>"; };
+		5EE947C022688DAC00FF8BA5 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		5EE947C222688DC300FF8BA5 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		5EE947C42268947E00FF8BA5 /* StoryBoards.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +156,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5EADC1A9226A0A0100AD134B /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				5EADC1AA226A0A2300AD134B /* EXT+UIToolbar.swift */,
+			);
+			path = Extentions;
+			sourceTree = "<group>";
+		};
+		5EADC1B2226A511C00AD134B /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		5EE947582267A4DB00FF8BA5 = {
 			isa = PBXGroup;
 			children = (
@@ -123,6 +194,8 @@
 		5EE947632267A4DB00FF8BA5 /* Fly365-MS */ = {
 			isa = PBXGroup;
 			children = (
+				5EADC1B2226A511C00AD134B /* Network */,
+				5EE947BA22687E8500FF8BA5 /* Model */,
 				5EE947992267E82E00FF8BA5 /* Resources */,
 				5EE947922267D6F100FF8BA5 /* Home */,
 				5EE947642267A4DB00FF8BA5 /* AppDelegate.swift */,
@@ -156,6 +229,7 @@
 		5EE947922267D6F100FF8BA5 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				5EE947B722687E5C00FF8BA5 /* ViewModels */,
 				5EE947942267D70800FF8BA5 /* ViewControllers */,
 				5EE947932267D6FC00FF8BA5 /* Storyboard */,
 			);
@@ -178,6 +252,7 @@
 				5EE947A42267F4EA00FF8BA5 /* OneWayViewController.swift */,
 				5EE947AC2268015900FF8BA5 /* TripInfoViewController.swift */,
 				5EE947B322681AA200FF8BA5 /* RoundTripViewController.swift */,
+				5EE947B522687B9A00FF8BA5 /* AirportSelectionViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -185,6 +260,8 @@
 		5EE947992267E82E00FF8BA5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5EADC1A9226A0A0100AD134B /* Extentions */,
+				5EE947BF22688D9900FF8BA5 /* Base */,
 				5EE947AE2268180300FF8BA5 /* Utils */,
 				5EE947A62267FB6C00FF8BA5 /* CustomViews */,
 				5EE9479A2267E83A00FF8BA5 /* Libs */,
@@ -230,10 +307,57 @@
 		5EE947AE2268180300FF8BA5 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				5EE947AF2268182A00FF8BA5 /* StoryboardsSegues.swift */,
 				5EE947B12268197100FF8BA5 /* Constants.swift */,
+				5EE947BD22687FA400FF8BA5 /* airport.json */,
+				5EE947C42268947E00FF8BA5 /* StoryBoards.swift */,
+				5EADC1AE226A45F000AD134B /* FlyUtils.swift */,
+				5EADC1B0226A4E0C00AD134B /* FlyErrorMessages.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		5EE947B722687E5C00FF8BA5 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947B822687E7400FF8BA5 /* AirportsViewModel.swift */,
+				5EADC1A12269F72B00AD134B /* TripViewModel.swift */,
+				5EADC1A72269FB1100AD134B /* RoundTripViewModel.swift */,
+				5EADC1AC226A27D700AD134B /* TripInfoViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		5EE947BA22687E8500FF8BA5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947BB22687EA000FF8BA5 /* Airport.swift */,
+				5EADC1A32269F76D00AD134B /* TripFormRequest.swift */,
+				5EADC1A52269F7C800AD134B /* Step.swift */,
+				5EADC1B3226A57DA00AD134B /* Leg.swift */,
+				5EADC1B5226A598C00AD134B /* Carrier.swift */,
+				5EADC1B7226A5A0C00AD134B /* Segment.swift */,
+				5EADC1B9226A5FD400AD134B /* EndPoint.swift */,
+				5EADC1BB226A603000AD134B /* FlightTime.swift */,
+				5EADC1BD226A620300AD134B /* StopEndPoint.swift */,
+				5EADC1BF226A624F00AD134B /* Stop.swift */,
+				5EADC1C1226A630000AD134B /* FuellingStops.swift */,
+				5EADC1C3226A636200AD134B /* Aircraft.swift */,
+				5EADC1C5226A645800AD134B /* FlightInfo.swift */,
+				5EADC1C7226A66EB00AD134B /* FlightSearchResponse.swift */,
+				5EADC1C9226A671F00AD134B /* Flight.swift */,
+				5EADC1CB226A67FE00AD134B /* FlightPrice.swift */,
+				5EADC1CD226A688C00AD134B /* PassangerCost.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		5EE947BF22688D9900FF8BA5 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				5EE947C022688DAC00FF8BA5 /* BaseViewController.swift */,
+				5EE947C222688DC300FF8BA5 /* BaseViewModel.swift */,
+			);
+			path = Base;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,6 +465,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EE9476F2267A4DD00FF8BA5 /* LaunchScreen.storyboard in Resources */,
+				5EE947BE22687FA400FF8BA5 /* airport.json in Resources */,
 				5EE9476C2267A4DD00FF8BA5 /* Assets.xcassets in Resources */,
 				5EE9476A2267A4DB00FF8BA5 /* Main.storyboard in Resources */,
 				5EE947962267D73400FF8BA5 /* Home.storyboard in Resources */,
@@ -369,19 +494,46 @@
 			buildActionMask = 2147483647;
 			files = (
 				5EE947A02267E85D00FF8BA5 /* AMPagerTabsViewController.swift in Sources */,
+				5EADC1C0226A624F00AD134B /* Stop.swift in Sources */,
+				5EADC1B8226A5A0C00AD134B /* Segment.swift in Sources */,
+				5EADC1BE226A620300AD134B /* StopEndPoint.swift in Sources */,
 				5EE947672267A4DB00FF8BA5 /* ViewController.swift in Sources */,
+				5EE947B922687E7400FF8BA5 /* AirportsViewModel.swift in Sources */,
 				5EE947AD2268015900FF8BA5 /* TripInfoViewController.swift in Sources */,
 				5EE947A32267F4E000FF8BA5 /* TripViewController.swift in Sources */,
+				5EADC1A22269F72B00AD134B /* TripViewModel.swift in Sources */,
+				5EADC1B6226A598C00AD134B /* Carrier.swift in Sources */,
+				5EE947C122688DAC00FF8BA5 /* BaseViewController.swift in Sources */,
+				5EADC1AF226A45F000AD134B /* FlyUtils.swift in Sources */,
+				5EADC1CE226A688C00AD134B /* PassangerCost.swift in Sources */,
+				5EADC1CA226A671F00AD134B /* Flight.swift in Sources */,
+				5EADC1C8226A66EB00AD134B /* FlightSearchResponse.swift in Sources */,
 				5EE947B422681AA200FF8BA5 /* RoundTripViewController.swift in Sources */,
+				5EADC1C4226A636200AD134B /* Aircraft.swift in Sources */,
+				5EADC1BA226A5FD400AD134B /* EndPoint.swift in Sources */,
+				5EADC1C2226A630000AD134B /* FuellingStops.swift in Sources */,
 				5EE947AB2267FF9700FF8BA5 /* RoundedCornersView.swift in Sources */,
+				5EE947C52268947E00FF8BA5 /* StoryBoards.swift in Sources */,
+				5EADC1A42269F76D00AD134B /* TripFormRequest.swift in Sources */,
+				5EADC1CC226A67FE00AD134B /* FlightPrice.swift in Sources */,
+				5EADC1B4226A57DB00AD134B /* Leg.swift in Sources */,
+				5EADC1A62269F7C800AD134B /* Step.swift in Sources */,
 				5EE9479F2267E85D00FF8BA5 /* AMTabButton.swift in Sources */,
+				5EADC1AB226A0A2300AD134B /* EXT+UIToolbar.swift in Sources */,
 				5EE947652267A4DB00FF8BA5 /* AppDelegate.swift in Sources */,
+				5EADC1A82269FB1100AD134B /* RoundTripViewModel.swift in Sources */,
 				5EE947B22268197100FF8BA5 /* Constants.swift in Sources */,
 				5EE947A12267E85D00FF8BA5 /* AMLineView.swift in Sources */,
 				5EE947982267D8DA00FF8BA5 /* HomeViewController.swift in Sources */,
+				5EADC1BC226A603000AD134B /* FlightTime.swift in Sources */,
 				5EE947A92267FB9200FF8BA5 /* RoundedCornersButton.swift in Sources */,
-				5EE947B02268182A00FF8BA5 /* StoryboardsSegues.swift in Sources */,
+				5EADC1B1226A4E0C00AD134B /* FlyErrorMessages.swift in Sources */,
+				5EE947C322688DC300FF8BA5 /* BaseViewModel.swift in Sources */,
+				5EE947BC22687EA000FF8BA5 /* Airport.swift in Sources */,
 				5EE947A52267F4EA00FF8BA5 /* OneWayViewController.swift in Sources */,
+				5EADC1AD226A27D700AD134B /* TripInfoViewModel.swift in Sources */,
+				5EADC1C6226A645800AD134B /* FlightInfo.swift in Sources */,
+				5EE947B622687B9A00FF8BA5 /* AirportSelectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

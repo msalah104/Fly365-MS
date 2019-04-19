@@ -19,6 +19,7 @@ class RoundedCornersView: UIView {
     }
     */
     
+    
     @IBInspectable var borderColor: UIColor = UIColor.white {
         didSet {
             self.layer.borderColor = borderColor.cgColor
