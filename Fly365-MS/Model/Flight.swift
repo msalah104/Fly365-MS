@@ -13,10 +13,10 @@ class Flight: Codable {
     var itineraryId = ""
     var airPriceGroup = 0
     var legs:[String] = []
-    var flightLegs:[Leg] = []
+    var flightLegs:[Leg]?
     var pricing:FlightPrice?
     var displayPricing:FlightPrice?
     var totalStops = 0
-    var discounts:[String] = []
+    var discounts:[String]?
     var carrier:Carrier?
 }

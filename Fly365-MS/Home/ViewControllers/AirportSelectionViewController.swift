@@ -82,8 +82,7 @@ extension AirportSelectionViewController:UITableViewDataSource, UITableViewDeleg
         let airport = fetchedAirports[indexPath.row]
         
         if airport.code == naAirportID {
-            //TODO add error message for selecting the same airport
-            print("NA Airport")
+            show(errorMessage: FlyErrorMessages.SAME_AIRPORT_Message)
             return
         }
         

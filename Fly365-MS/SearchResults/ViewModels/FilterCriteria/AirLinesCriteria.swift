@@ -8,6 +8,23 @@
 
 import UIKit
 
-class AirLinesCriteria: NSObject {
-
+class AirLinesCriteria: NSObject, Criteria {
+  
+    var options:[String] = []
+    
+    func meetCriteria(flights: [Flight]) -> [Flight] {
+        var result = [Flight]()
+        
+        for flight in flights {
+            if options.contains((flight.carrier?.code)!) {
+                result.append(flight)
+            }
+        }
+        
+        return result
+    }
+    
+    required init(options: [Any]) {
+        self.options = options as! [String]
+    }
 }

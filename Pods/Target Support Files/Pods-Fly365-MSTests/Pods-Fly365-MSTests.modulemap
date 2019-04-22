@@ -1,0 +1,6 @@
+framework module Pods_Fly365_MSTests {
+  umbrella header "Pods-Fly365-MSTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

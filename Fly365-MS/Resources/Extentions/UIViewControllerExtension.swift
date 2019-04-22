@@ -1,8 +1,9 @@
 //
-//  UIViewControllerExtension.swift
-//  Tasawwaq
+//  SearchResultsViewController.swift
+//  Fly365-MS
 //
-//  Created by Marwan on 8/25/18.
+//  Created by Mohammed Salah on 4/20/19.
+//  Copyright © 2019 Mohammed Salah. All rights reserved.
 //
 
 import UIKit
@@ -19,21 +20,6 @@ extension UIResponder: Identifiable {
     }
 }
 
-protocol Instantiatable {
-    static func instantiate(from storyboardIdentifier: UIStoryboard) -> Self
-}
-
-extension UIViewController: Instantiatable { }
-
-extension Instantiatable where Self: UIViewController {
-    static func instantiate(from storyboardIdentifier: UIStoryboard = .main) -> Self {
-        
-        guard let viewController = storyboardIdentifier.instantiateViewController(withIdentifier: self.identifier) as? Self else {
-            return Self()
-        }
-        return viewController
-    }
-}
 
 extension UIViewController {
 
@@ -52,7 +38,7 @@ extension UIViewController {
         self.present(alert, animated: true, completion: nil)
     }
     
-    func showProgress(on view: UIView? = nil, color: UIColor = .white) {
+    func showProgress(on view: UIView? = nil, color: UIColor = .clear) {
         
         let finalView = view ?? self.view
         let hud = MBProgressHUD.showAdded(to: (finalView)!, animated: true)
@@ -71,13 +57,7 @@ extension UIViewController {
         }
         showSwiftMesssages(message: errorMessage)
     }
-    
-    func showAlert(errorMessage: String, hideProgress: Bool = true) {
-        if hideProgress {
-            self.hideProgress()
-        }
-        AlertView().Default().setAlertTitle(title: "خطأ").setAlertContent(content: errorMessage).show(view: self)
-    }
+
     
     func show(error: Error, hideProgress: Bool = true) {
         if hideProgress {

@@ -48,9 +48,6 @@ class TripViewController: BaseViewController {
          pickerViewContainer.isHidden = true
     }
     
-    
-    
-    
     func switchTripFromAndTo(Index index:Int = 0){
         
     }

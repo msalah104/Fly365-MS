@@ -8,6 +8,9 @@
 
 import UIKit
 
-class Criteria: NSObject {
+protocol Criteria: class {
 
+    func meetCriteria (flights:[Flight]) -> [Flight]
+        
+    init(options:[Any])
 }

@@ -1,0 +1,6 @@
+framework module Pods_Fly365_MS {
+  umbrella header "Pods-Fly365-MS-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -12,8 +12,6 @@ class HomeViewController: AMPagerTabsViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
         
         self.navigationController?.navigationBar.isHidden = true
         settings.tabBackgroundColor = #colorLiteral(red: 0.1346258223, green: 0.1712838709, blue: 0.2785593569, alpha: 1)
@@ -22,36 +20,21 @@ class HomeViewController: AMPagerTabsViewController {
         tabFont = UIFont.systemFont(ofSize: 17, weight: .bold)
         
         self.viewControllers = getTabs()
-        
-        
-        
     }
     
     
-    //TODO : Update the naming of the method
     func getTabs() -> [UIViewController]{
         // instantiate the viewControllers
-        let airplaneViewController = self.storyboard?.instantiateViewController(withIdentifier: "airplaneViewController")
-        let giftViewController = self.storyboard?.instantiateViewController(withIdentifier: "giftViewController")
-        let shoeViewController = self.storyboard?.instantiateViewController(withIdentifier: "shoeViewController")
+        let oneWayViewController = self.storyboard?.instantiateViewController(withIdentifier: "oneWayViewController")
+        let roundTripViewController = self.storyboard?.instantiateViewController(withIdentifier: "roundTripViewController")
+        let multiCityViewController = self.storyboard?.instantiateViewController(withIdentifier: "multiCityViewController")
         
         // set the title for the tabs
-        airplaneViewController?.title = "One Way"
-        giftViewController?.title = "Round Trip"
-        shoeViewController?.title = "Multi City"
+        oneWayViewController?.title = "One Way"
+        roundTripViewController?.title = "Round Trip"
+        multiCityViewController?.title = "Multi City"
         
-        
-        return [airplaneViewController!,giftViewController!,shoeViewController!]
+        return [oneWayViewController!,roundTripViewController!,multiCityViewController!]
     }
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }

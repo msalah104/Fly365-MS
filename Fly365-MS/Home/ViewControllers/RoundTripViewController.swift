@@ -27,20 +27,24 @@ class RoundTripViewController: TripViewController {
     }
     
     override func setupView() {
-        viewModel = RoundTripViewModel(tripFormType: .RoundTrip)
+        viewModel = RoundTripViewModel()
         viewModel.didUpdateValue = updateUI
         self.dataSource = self
     }
     
     override func didPressDone(_ sender: UIBarButtonItem) {
         if datePickState == .Departure {
-            viewModel.departureDate = datePicker.date
+            if (datePicker.date.timeIntervalSince(viewModel.returnDate!).sign) == .minus {
+                viewModel.departureDate = datePicker.date
+            } else {
+                show(errorMessage: FlyErrorMessages.REUTRN_BEFORE_DEPARTURE_Message)
+                return
+            }
         } else {
             if (viewModel.departureDate?.timeIntervalSince(datePicker.date).sign)! == .minus {
                viewModel.returnDate = datePicker.date
             } else {
-                //TODO add error message for selected return date after dep date
-                print("Return date must be after departure date")
+                show(errorMessage: FlyErrorMessages.REUTRN_BEFORE_DEPARTURE_Message)
                 return
             }
             
@@ -77,6 +81,7 @@ class RoundTripViewController: TripViewController {
         datePickState = .Return
     }
     
+    
     override func switchTripFromAndTo(Index index: Int) {
         if viewModel.originAirport != nil && viewModel.destinationAirport != nil {
             viewModel.switchFromAndTo()
@@ -85,9 +90,13 @@ class RoundTripViewController: TripViewController {
     
     override func didPressSearch(_ button: UIButton) {
         let errorMessage = viewModel.isValidSearch()
-        if  errorMessage.isEmpty {
-            //TODO show error message
+        if  !errorMessage.isEmpty {
+            show(errorMessage: errorMessage)
             return
+        } else {
+            let searchVC = StoryBoards.Search.storyboard.instantiateViewController(withIdentifier: StoryBoards.Search.ViewIds.searchResults) as! SearchResultsViewController
+            searchVC.viewModel = SearchViewModel.init(tripRequest: viewModel.tripFormRequest)
+            self.show(searchVC, sender: nil)
         }
     }
 

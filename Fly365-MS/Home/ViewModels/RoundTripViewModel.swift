@@ -63,11 +63,21 @@ class RoundTripViewModel: TripViewModel {
         temp = nil
     }
     
+    init() {
+        super.init(tripFormType: .RoundTrip)
+        // This will be the return trip, as it's round trip
+        self.addNewStep()
+        departureDate = Date()
+        returnDate = Date()
+    }
+    
     
     override init(tripFormType: TripFormType) {
         super.init(tripFormType: tripFormType)
         // This will be the return trip, as it's round trip
         self.addNewStep()
+        departureDate = Date()
+        returnDate = Date()
     }
     
     func notApplicableAirport(airportType:AirportType) -> String {
@@ -94,9 +104,6 @@ class RoundTripViewModel: TripViewModel {
         }
         return ""
     }
-    
-    func submitSearch() {
-        
-    }
+
 
 }

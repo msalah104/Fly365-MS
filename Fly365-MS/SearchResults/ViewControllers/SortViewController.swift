@@ -10,21 +10,40 @@ import UIKit
 
 class SortViewController: UIViewController {
 
+    @IBOutlet weak var tblSort: UITableView!
+    var selectedSortType = SearchResultsSortType.Cheapest
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
+ 
+
+}
+
+extension SortViewController:UITableViewDataSource, UITableViewDelegate {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
     }
-    */
-
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell\(indexPath.row + 1)", for: indexPath)
+        
+        cell.textLabel?.text = SearchResultsSortType.elements()[indexPath.row].rawValue
+        cell.accessoryType = .none
+        
+        if selectedSortType == SearchResultsSortType.elements()[indexPath.row] {
+            cell.accessoryType = .checkmark
+        }
+        
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedSortType = SearchResultsSortType.elements()[indexPath.row]
+        tableView.reloadData()
+        self.dismiss(animated: true, completion: nil)
+    }
 }

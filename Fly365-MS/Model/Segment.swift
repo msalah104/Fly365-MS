@@ -15,7 +15,7 @@ class Segment: Codable {
     var destination:EndPoint?
     var stops:[Stop] = []
     var fuellingStops:[FuellingStops] = []
-    var carrier = ""
+    var carrier:Carrier?
     var baggage = ""
     var flightInfo:FlightInfo = FlightInfo()
     var cabinClass = ""

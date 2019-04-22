@@ -8,6 +8,18 @@
 
 import UIKit
 
-class FlightSearchResponse: NSObject {
+class FlightSearchResponse: Codable {
 
+    var searchId:String?
+    var itineraries:[Flight]?
+    var legs:[Leg]?
+    var segments:[Segment]?
+    var airports:[Airport]?
+    
+    // Error fields
+    var code:String?
+    var message:String?
+    
+    
+    
 }

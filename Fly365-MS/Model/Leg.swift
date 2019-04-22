@@ -22,7 +22,7 @@ class Leg: Codable {
     var stops = 0
     var duration = 0
     var segments:[String] = []
-    var legSegmenr:[Segment] = []
+    var legSegment:[Segment]?
     var carrier:Carrier?
 
 }

@@ -76,16 +76,28 @@ class TripViewModel: NSObject {
     }
     
     private func updateFromAirportForTrip(Index index:Int, Airport airport:Airport) {
+        if index < 0 || index >= tripFormRequest.steps.count {
+            return
+        }
+        
         let step = tripFormRequest.steps[index]
         step.origin = airport
     }
     
     private func updateToAirportForTrip(Index index:Int, Airport airport:Airport) {
+        if index < 0 || index >= tripFormRequest.steps.count {
+            return
+        }
+        
         let step = tripFormRequest.steps[index]
         step.destination = airport
     }
     
     private func updateDateForTrip(Index index:Int, Date date:Date) {
+        if index < 0 || index >= tripFormRequest.steps.count {
+            return
+        }
+        
         let step = tripFormRequest.steps[index]
         step.date = date
     }

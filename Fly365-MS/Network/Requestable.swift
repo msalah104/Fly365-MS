@@ -1,10 +1,10 @@
 //
-//  Requestable.swift
-//  Tasawwaq
+//  TripViewModel.swift
+//  Fly365-MS
 //
-//  Created by Marwan on 9/1/18.
+//  Created by Mohammed Salah on 4/19/19.
+//  Copyright © 2019 Mohammed Salah. All rights reserved.
 //
-
 import Alamofire
 import CodableAlamofire
 
@@ -61,8 +61,17 @@ extension Requestable {
             url = url.appendingPathComponent(path)
         }
         
-        let urlRequest = try URLRequest(url: url, method: method)
+        // get ApiKey
+        let apiKeyPath = Bundle.main.url(forResource: "Api", withExtension: "plist")
+        let dictionary = NSDictionary.init(contentsOf: apiKeyPath!)
+        let apiKey = dictionary!["ApiKey"]
+    
+        var urlRequest = try URLRequest(url: url, method: method)
+        urlRequest.addValue(apiKey as! String, forHTTPHeaderField: ServerKeys.authorization)
+        urlRequest.addValue(ServerKeys.contentValue, forHTTPHeaderField: ServerKeys.content)
+        
         print("\(url.absoluteString)")
+        
         return try Alamofire.JSONEncoding.default.encode(urlRequest, with: parameters)
     }
     
@@ -82,99 +91,11 @@ extension Requestable {
 
 enum ApiModule: String {
     
-    case login
-    case signup
-    case allCountries
-    case allCities
-    case allCategories
-    case allDetailsCategories
-    case productsubcategories
-    case addStoreToFav
-    case getStorePreOrders
-    case getAvailableStores
-    case verify
-    case resend
-    case updateUserDetails
-    case forgetPass
-    case cart
-    case getAllProductsForStore
-    case refreshUserToken
-    case addtocart
-    case wishlist
-    case addtowishlist
-    case addNewAddress
-    case editcart
-    case addresses
-    case addorder
-    case orderdetails
-    case addItermToFav
-    case deladdress
-    case orders
-    case myorders
-    case ordersdurations
-    case pay
-    case eligibilty
-    case returns
-    case processdorder
-    case editorder
-    case getAllFAQs
-    case contact
-    case statistics
-    case searchWithText
-    case marketdetails
-    case offers
-    case myallorders
-    case notifications
-    case readNotifications
-    case rateStores
+    case searchForFlights
 
     var name: String {
         switch self {
-        case .login: return "login"
-        case .signup: return "register"
-        case .allCountries: return "countries"
-        case .allCities: return "cities"
-        case .allCategories: return "categories"
-        case .allDetailsCategories: return "productcategories"
-        case .addStoreToFav: return "favorites"
-        case .getStorePreOrders: return "myorders"
-        case .getAvailableStores: return "stores"
-        case .verify: return "verify"
-        case .resend: return "mobile"
-        case .updateUserDetails: return "update"
-        case .forgetPass: return "forget"
-        case .cart: return "cart"
-        case .getAllProductsForStore: return "marketproducts"
-        case .refreshUserToken: return "refresh"
-        case .addtocart: return "addtocart"
-        case .wishlist: return "wishlist"
-        case .addtowishlist: return "addtowishlist"
-        case .addNewAddress: return "addaddress"
-        case .editcart: return "editcart"
-        case .addItermToFav: return "addtowishlist"
-        case .addresses : return "addresses"
-        case .addorder: return "addorder"
-        case .orderdetails: return "orderdetails"
-        case .deladdress: return "deladdress"
-        case .orders: return "orders"
-        case .myorders: return "myorders"
-        case .ordersdurations: return "ordersdurations"
-        case .productsubcategories: return "productsubcategories"
-        case .pay: return "pay"
-        case .eligibilty: return "eligibilty"
-        case .returns: return "returns"
-        case .processdorder: return "processdorder"
-        case .editorder: return "editorder"
-        case .getAllFAQs: return "faq"
-        case .contact: return "contact"
-        case .statistics: return "statistics"
-        case .searchWithText: return "searchproducts"
-        case .offers: return "offers"
-        case .marketdetails: return "marketdetails"
-        case .myallorders: return "myallorders"
-        case .notifications: return "notifications"
-        case .readNotifications: return "read"
-        case .rateStores: return "rateapp"
+        case .searchForFlights: return "search"
         }
     }
 }

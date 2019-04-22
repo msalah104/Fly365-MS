@@ -100,18 +100,18 @@ class TripInfoViewModel: NSObject {
     func validateNumberOfPassangers(passangerType:PassangerType, newValue:Int) -> String {
         
         // check passangers count
-        if (adult + child + infant) > Configs.MAX_NUMBER_OF_PASSANGERS - 1 {
-            return "Max number of passnager is \(Configs.MAX_NUMBER_OF_PASSANGERS )"
+        if (adult + child + infant) > Configurations.MAX_NUMBER_OF_PASSANGERS - 1 {
+            return FlyErrorMessages.MAX_N_PASSANGERS_Message
         }
         
         // Check number of infant per adult
-        if  passangerType == .Child && newValue > Configs.MAX_CHILD_PER_ADULT {
-            return "Max number of Childern is \(Configs.MAX_CHILD_PER_ADULT )"
+        if  passangerType == .Child && newValue > Configurations.MAX_CHILD_PER_ADULT {
+            return FlyErrorMessages.MAX_N_CHILD_Message
         }
         
         // Check number of infant per adult
-        if  passangerType == .Infant && (newValue / adult) > Configs.MAX_INFANT_PER_ADULT {
-            return "Max number of infant for 1 adult is \(Configs.MAX_INFANT_PER_ADULT )"
+        if  passangerType == .Infant && (newValue > adult) {
+            return FlyErrorMessages.MAX_N_INFANT_Message
         }
         
         return ""

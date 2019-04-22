@@ -11,7 +11,7 @@ import UIKit
 class TripFormRequest: NSObject {
 
     var steps:[Step] = [Step]()
-    var flightClass:FlightClass?
+    var flightClass:FlightClass = .Economy
     var adult = 1
     var infant = 0
     var child = 0

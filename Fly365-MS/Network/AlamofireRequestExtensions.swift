@@ -1,8 +1,9 @@
 //
-//  AlamofireRequestExtensions.swift
-//  Tasawwaq
+//  TripViewModel.swift
+//  Fly365-MS
 //
-//  Created by Marwan Ayman on 9/7/18.
+//  Created by Mohammed Salah on 4/19/19.
+//  Copyright © 2019 Mohammed Salah. All rights reserved.
 //
 
 import UIKit
@@ -56,7 +57,7 @@ public extension Alamofire.DataRequest {
                 
                 let domain = json["statusCode"] as? String ?? "error"
                 if domain == "0000" {
-                    let error = TAError(code: domain, message: message)
+                    let error = FlyError(code: domain, message: message)
                     
                     //log error
                     self?.log(code: code, url: requestURL, message: json as AnyObject, isError: true, request: request)

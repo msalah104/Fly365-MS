@@ -16,6 +16,6 @@ class FlightView: UIView {
     @IBOutlet weak var lblFrom: UILabel!
     @IBOutlet weak var lblTo: UILabel!
     @IBOutlet weak var lblDuration: UILabel!
-    
+    @IBOutlet weak var lblFlightNumber: UILabel!
 
 }

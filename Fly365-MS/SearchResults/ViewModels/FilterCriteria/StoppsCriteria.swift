@@ -8,6 +8,23 @@
 
 import UIKit
 
-class StoppsCriteria: NSObject {
-
+class StoppsCriteria: NSObject, Criteria {
+    
+    var options:[Int] = []
+    
+    func meetCriteria(flights: [Flight]) -> [Flight] {
+        var result = [Flight]()
+        
+        for flight in flights {
+            if options.contains(flight.totalStops) {
+                result.append(flight)
+            }
+        }
+        
+        return result
+    }
+    
+    required init(options: [Any]) {
+        self.options = options as! [Int]
+    }
 }

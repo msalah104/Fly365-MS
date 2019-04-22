@@ -9,14 +9,39 @@
 import UIKit
 
 class FilterViewController: UIViewController {
+    
+    @IBOutlet weak var tblFilter:UITableView!
+    
+    var viewModel:FilterManagerDataSource!
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
+       tblFilter.tableFooterView = UIView.init(frame: CGRect.zero)
     }
     
-
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        let cv = segue.destination as! FilterTableViewController
+        
+        if segue.identifier == StoryBoards.Search.Segues.stopps {
+            cv.dataSource = viewModel.getStoppsList().map({String($0)})
+            cv.selectedItems = viewModel.getSelectedStopps().map({String($0)})
+            cv.dataType = .Stopps
+        } else if segue.identifier == StoryBoards.Search.Segues.airlines {
+            cv.dataSource = viewModel.getAirlinesList()
+            cv.selectedItems = viewModel.getSelectedAirlines()
+            cv.dataType = .Airlines
+        } else if segue.identifier == StoryBoards.Search.Segues.airports {
+            cv.dataSource = viewModel.getAirportsList()
+            cv.selectedItems = viewModel.getSelectedAirports()
+            cv.dataType = .Airports
+        }
+        
+        cv.viewModel = viewModel
+    }
+    
+    
+    
     /*
     // MARK: - Navigation
 
@@ -27,4 +52,38 @@ class FilterViewController: UIViewController {
     }
     */
 
+    
+    @IBAction func didPressDismiss(_ sender: UIBarButtonItem) {
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func didPressApply(_ sender: RoundedCornersButton) {
+        viewModel.applyFilter()
+        self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func didPressClear(_ sender: RoundedCornersButton) {
+        viewModel.updateSelectedAirlines(airlines: [])
+        viewModel.updateSelectedAirports(airports: [])
+        viewModel.updateSelectedStopps(stopps: [])
+        viewModel.applyFilter()
+        self.dismiss(animated: true, completion: nil)
+    }
+}
+
+extension FilterViewController: UITableViewDataSource, UITableViewDelegate {
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 3
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "Cell\(indexPath.row +  1)", for: indexPath)
+       
+        return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+       
+    }
 }

@@ -12,7 +12,7 @@ class Carrier: Codable {
 
     var code = ""
     var name = ""
-    var aircraft:Aircraft
-    var flightNumber = ""
-    var codeShare:String?
+    var aircraft:Aircraft?
+    var flightNumber:String?
+    
 }

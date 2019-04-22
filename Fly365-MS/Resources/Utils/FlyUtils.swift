@@ -15,4 +15,10 @@ class FlyUtils: NSObject {
         dateFormatter.dateFormat = "MMM dd"
         return dateFormatter.string(from: date)
     }
+    
+    static func ParamtersDateFormate(date:Date) -> String{
+        let dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd"
+        return dateFormatter.string(from: date)
+    }
 }

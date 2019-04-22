@@ -1,10 +1,10 @@
 //
-//  ServiceManager.swift
-//  Tasawwaq
+//  TripViewModel.swift
+//  Fly365-MS
 //
-//  Created by Marwan on 9/1/18.
+//  Created by Mohammed Salah on 4/19/19.
+//  Copyright © 2019 Mohammed Salah. All rights reserved.
 //
-
 import UIKit
 
 import Alamofire
@@ -31,13 +31,6 @@ class ServiceManager {
          return manager.request(urlRequest)
     }
     
-    func upload(_ multipartFormData: @escaping (MultipartFormData) -> Void, urlRequest: URLRequestConvertible, encodingCompletion: ((SessionManager.MultipartFormDataEncodingResult) -> Void)?) {
-        manager.upload(multipartFormData: multipartFormData, with: urlRequest, encodingCompletion: encodingCompletion)
-    }
-    
-    func download(_ urlRequest: URLRequestConvertible, to destination: DownloadRequest.DownloadFileDestination? = nil) -> DownloadRequest {
-        return manager.download(urlRequest, to: destination)
-    }
 }
 
 extension ServiceManager {
@@ -58,7 +51,7 @@ extension ServiceManager {
 extension ServiceManager {
     struct API {
         static var baseUrl: URL {
-            return URL(string: "http://tasawwaq.spotlayer.com/api/")!
+            return URL(string: Constants.BASE_URL)!
         }
     }
 }

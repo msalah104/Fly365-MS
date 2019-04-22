@@ -86,11 +86,10 @@ class TripInfoViewController: UIViewController {
             value = value! + 1
             
             //Validate
-            var error = viewModel?.validateNumberOfPassangers(passangerType: state, newValue: value!)
+            let error = viewModel?.validateNumberOfPassangers(passangerType: state, newValue: value!)
             
             if !(error?.isEmpty)! {
-                //TODO ahow error message with error
-                print(error)
+                show(errorMessage: error!)
                 return
             }
             
